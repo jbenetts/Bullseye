@@ -19,13 +19,13 @@ class BullseyeTests: XCTestCase {
     override func tearDownWithError() throws {
         game = nil
     }
-
+    //Test #1. See if the score is positive
     func testScorePositive(){
         let guess = game.randomTarget + 5
         let score = game.returnPoints(sliderValue: guess)
         XCTAssertEqual(score, 95)
     }
-    
+    //Test #1. See if the score is negative
     func testScoreNegative(){
         let guess = game.randomTarget - 5
         let score = game.returnPoints(sliderValue: guess)

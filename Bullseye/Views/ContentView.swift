@@ -38,6 +38,7 @@ struct ContentView: View {
             }){
                 Text("Hit Me!")
             }
+            //Add and alert to the button
             .alert(isPresented: $alertVisible,
                    content: {
                 let roundedValue: Int = Int(self.sliderValue.rounded())

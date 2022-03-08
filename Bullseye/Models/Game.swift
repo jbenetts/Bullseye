@@ -8,10 +8,11 @@
 import Foundation
 
 struct Game{
+    //Variables
     var randomTarget: Int = Int.random(in: 1...100)
     var score: Int = 0
     var round: Int = 1
-    
+    //Function to return the points, we need the slider value to make the calculation
     func returnPoints(sliderValue: Int) -> Int{
         var difference: Int
         if sliderValue > self.randomTarget
