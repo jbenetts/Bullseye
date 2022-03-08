@@ -14,18 +14,10 @@ struct Game{
     var round: Int = 1
     //Function to return the points, we need the slider value to make the calculation
     func returnPoints(sliderValue: Int) -> Int{
-        var difference: Int
-        if sliderValue > self.randomTarget
+        var difference: Int = self.randomTarget - sliderValue
+        if (difference < 0)
         {
-            difference = sliderValue - self.randomTarget
-        }
-        else if self.randomTarget > sliderValue
-        {
-            difference = self.randomTarget - sliderValue
-        }
-        else
-        {
-            difference = 0
+            difference = difference * -1
         }
         let awardedPoint: Int = 100 - difference
         return awardedPoint
