@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D5235A827D6B0EC00897812 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5235A727D6B0EC00897812 /* Game.swift */; };
 		8DE2BFA127D14DF800F71A30 /* BullseyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2BFA027D14DF800F71A30 /* BullseyeApp.swift */; };
 		8DE2BFA327D14DF800F71A30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2BFA227D14DF800F71A30 /* ContentView.swift */; };
 		8DE2BFA527D14DF900F71A30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE2BFA427D14DF900F71A30 /* Assets.xcassets */; };
@@ -14,7 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8D5235A327D67ABB00897812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D5235A327D67ABB00897812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D5235A727D6B0EC00897812 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		8DE2BF9D27D14DF800F71A30 /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE2BFA027D14DF800F71A30 /* BullseyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeApp.swift; sourceTree = "<group>"; };
 		8DE2BFA227D14DF800F71A30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +35,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D5235A427D6AEED00897812 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D5235A727D6B0EC00897812 /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D5235A527D6AF1200897812 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8DE2BFA227D14DF800F71A30 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D5235A627D6B00700897812 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8D5235A327D67ABB00897812 /* Info.plist */,
+				8DE2BFA027D14DF800F71A30 /* BullseyeApp.swift */,
+				8DE2BFA427D14DF900F71A30 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		8DE2BF9427D14DF800F71A30 = {
 			isa = PBXGroup;
 			children = (
@@ -52,10 +80,9 @@
 		8DE2BF9F27D14DF800F71A30 /* Bullseye */ = {
 			isa = PBXGroup;
 			children = (
-				8D5235A327D67ABB00897812 /* Info.plist */,
-				8DE2BFA027D14DF800F71A30 /* BullseyeApp.swift */,
-				8DE2BFA227D14DF800F71A30 /* ContentView.swift */,
-				8DE2BFA427D14DF900F71A30 /* Assets.xcassets */,
+				8D5235A627D6B00700897812 /* App */,
+				8D5235A527D6AF1200897812 /* Views */,
+				8D5235A427D6AEED00897812 /* Models */,
 				8DE2BFA627D14DF900F71A30 /* Preview Content */,
 			);
 			path = Bullseye;
@@ -140,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DE2BFA327D14DF800F71A30 /* ContentView.swift in Sources */,
+				8D5235A827D6B0EC00897812 /* Game.swift in Sources */,
 				8DE2BFA127D14DF800F71A30 /* BullseyeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +301,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bullseye/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Bullseye/Info.plist;
+				INFOPLIST_FILE = Bullseye/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -302,7 +330,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bullseye/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Bullseye/Info.plist;
+				INFOPLIST_FILE = Bullseye/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
